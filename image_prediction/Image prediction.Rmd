@@ -1,0 +1,158 @@
+---
+title: "image prediction"
+author: "crypticsy"
+output: html_document
+---
+
+```{r}
+
+library(keras)
+library(EBImage)
+library(tensorflow)
+
+```
+
+
+
+```{r}
+
+# Test case was too small to get accurate results
+
+pics <- c("c1.JPG","c2.JPG","c3.JPG","c4.JPG","c5.JPG","p1.JPG","p2.JPG","p3.JPG","p4.JPG","p5.JPG")
+
+myimage <- list()
+
+for(i in 1:10){
+  myimage[[i]] <- readImage(pics[i])
+}
+
+for(i in 1:10){
+  myimage[[i]] <- resize(myimage[[i]], 28 , 28)
+}
+
+
+# str(myimage)
+
+```
+
+```{r}
+
+for(i in 1:10){
+  myimage[[i]] <- array_reshape(myimage[[i]], c(28, 28, 3))
+}
+
+display(myimage[[1]])
+
+```
+
+```{r}
+
+# Create training set
+train <- NULL
+
+for(i in 1:4){
+  train <- rbind(train, myimage[[i]])
+}
+
+for(i in 6:9){
+  train <- rbind(train, myimage[[i]])
+}
+
+# Create test set
+test <- rbind(myimage[[5]], myimage[[10]])
+
+```
+
+```{r}
+
+# Creating labels for the NN Model
+train_labels <- c(1,1,1,1,0,0,0,0)
+test_labels <- c(1,0)
+
+train_labels <- to_categorical(train_labels)
+test_labels <- to_categorical(test_labels)
+train_labels
+
+```
+```{r}
+
+# creating the NN Model
+
+model <- keras_model_sequential()
+model %>%
+  layer_dense(units = 256, activation = "relu", input_shape = c(2352)) %>%
+  layer_dense(units = 128, activation = "relu") %>%
+  layer_dense(units = 2, activation = "softmax")
+
+summary(model)
+
+```
+```{r}
+
+# Training the NN Model
+
+model%>%
+  compile(loss = "binary_crossentropy", optimizer = optimizer_rmsprop(),metrics= c("accuracy"))
+
+history <- model%>%
+  fit(train, 
+      train_labels, 
+      epochs = 30, 
+      batch_size  = 32, 
+      validation_split = .2)
+
+plot(history)
+  
+```
+
+```{r}
+
+# Testing model on train set
+
+model%>%
+  evaluate(train,train_labels)
+
+
+pred <- model%>%
+  predict_classes(train)
+
+pred
+
+
+```
+```{r}
+
+# Testing on test set
+
+model%>%
+  evaluate(test, test_labels)
+
+
+predTest <- model%>%
+  predict_classes(test)
+
+predTest
+
+```
+
+
+
+```
+
+# To view all the details of the data structure
+# str(myimage)
+
+# To see how the computer views the image
+# print(myimage[[1]])
+
+# To display the image
+# display(myimage[[1]]) 
+
+# To Resize the images 
+#
+# for(i in 1:10){
+#   myimage[[i]] <- resize(myimage[[i]], 28 , 28)
+# }
+
+```
+
