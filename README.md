@@ -14,6 +14,7 @@ A collection of small projects and applications made for fun.
 * [Fake News Detection (Python)](./fake_news_detection)
 * [Image Prediction (R)](./image_prediction/)
 * [Predicting House Prices (Python)](./predicting_house_prices/)
+* [Predicting Numbers from Handwritten Digits (R)](./predicting_handwritten_digits/)
 * [Sentiment Analysis through Movie Reviews (Python)](./sentiment_analysis)
 
 

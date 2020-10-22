@@ -1,0 +1,100 @@
+---
+title: "Number prediction form handwritten digits"
+author: "crypticsy"
+date: "October 22, 2020"
+output: pdf_document
+---
+
+```{r}
+setwd("E:/Playground/predicting_handwritten_digits")
+library(keras)
+mnist <- suppressMessages(dataset_mnist())
+c(c(train_images, train_labels), c(test_images, test_labels)) %<-% mnist
+
+```
+
+```{r}
+digit <- train_images[1,,]
+plot(as.raster(digit, max = 255))
+```
+
+
+
+
+
+Importing and normalizing dataset
+
+```{r}
+train_images <- array_reshape(train_images, c(60000, 28*28))
+test_images <- array_reshape(test_images, c(10000, 28*28))
+
+train_images <- train_images/255
+test_imates <- test_images/255
+```
+
+
+```{r}
+str(train_images)
+str(test_images)
+```
+
+
+
+
+
+One hot encoding
+
+```{r}
+train_labels <- to_categorical(train_labels)
+test_labels <- to_categorical(test_labels)
+```
+
+
+
+
+Building the model
+
+```{r}
+network <- keras_model_sequential()%>%
+  layer_dense(units=512,activation = 'relu', input_shape = 28*28)%>%
+  layer_dense(units=10, activation = 'softmax') 
+
+summary(network)  
+```
+
+
+
+Loss Optimizer and Model Run
+
+```{r}
+network%>%
+  compile(
+    optimizer ='rmsprop',
+    loss ='categorical_crossentropy',
+    metric = c('accuracy')
+  )
+```
+
+
+```{r}
+history <- network%>%
+  fit(train_images, train_labels, epochs=5, batch_size=128)
+```
+
+
+
+Test data and summary
+
+```{r}
+network%>%
+  evaluate(test_images, test_labels)
+```
+
+```{r}
+predictions <- network%>%
+  predict_classes(test_images)
+
+actual <- mnist$test$y
+sum(predictions != actual)
+```
+
