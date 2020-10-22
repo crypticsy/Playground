@@ -13,6 +13,7 @@ A collection of small projects and applications made for fun.
 * [Covid 19 Detection through Chest X-Rays (Python)](./covid19_detection_through_chest_X-Ray/)
 * [Fake News Detection (Python)](./fake_news_detection)
 * [Image Prediction (R)](./image_prediction/)
+* [Predicting House Prices (Python)](./predicting_house_prices/)
 * [Sentiment Analysis through Movie Reviews (Python)](./sentiment_analysis)
 
 
