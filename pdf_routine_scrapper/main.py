@@ -30,7 +30,7 @@ for page in range(page_count):
 with open(path+"/routine.txt", "w") as file:
     for day in week:
         data = database[day]
-        data.sort(key = lambda x: x[0])
+        data.sort(key = lambda x: (x[0][6:8],x[0]))
         output = "------------------- %s -------------------\n"%(week[day])
         for i in data:
             temp = [i[0], i[2], i[3], "[ "+ i[4]+ " ]", "-->" , i[5], "( "+i[1]+" )"]

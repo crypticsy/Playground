@@ -14,9 +14,9 @@
 07:00 AM - 08:00 AM   CS5002NI   Software Engineering   [ Mr. Rajesh Dware ]   -->   C2   ( Tutorial )
 
 ------------------- Thursday -------------------
-01:30 PM - 03:00 PM   CS5004NI   Emerging Programming Platforms and Technologies   [ Mr. Prithivi Maharjan ]   -->   C2   ( Lab )
 10:30 AM - 11:30 AM   CC5051NI   Databases   [ Ms. Yunisha Bajracharya ]   -->   C2   ( Tutorial )
 11:30 AM - 01:00 PM   CS5002NI   Software Engineering   [ Mr. Rajesh Dware ]   -->   C2   ( Lab )
+01:30 PM - 03:00 PM   CS5004NI   Emerging Programming Platforms and Technologies   [ Mr. Prithivi Maharjan ]   -->   C2   ( Lab )
 
 ------------------- Friday -------------------
 08:30 AM - 10:00 AM   CS5001NI   Networks and Operating Systems   [ Mr. Dipeshor Silwal ]   -->   C2   ( Lab )
