@@ -4,24 +4,24 @@ A collection of small projects and applications made for fun.
 
 
 ### Automation
-* [PDF Routine Scrapper (Python)](./pdf_routine_scrapper/)
-* [WordCloud Generator (Python)](./wordcloud_generator/)
+* [PDF Routine Scrapper (Python)](./Automation/pdf_routine_scrapper/)
+* [WordCloud Generator (Python)](./Automation/wordcloud_generator/)
 
 
 ### Game Engine
-* [Chess (Python)](./Chess/)
-* [Flappy Bird (C#)](./FlappyBird/)
+* [Chess (Python)](./Game_Engine/Chess/)
+* [Flappy Bird (C#)](./Game_Engine/FlappyBird/)
 
 
 ### Machine Learning
-* [Convolutions for Text Classification (Python)](./convolutions_for_text_classification/)
-* [Covid 19 Detection through Chest X-Rays (Python)](./covid19_detection_through_chest_X-Ray/)
-* [Fake News Detection (Python)](./fake_news_detection)
-* [Image Prediction (R)](./image_prediction/)
-* [Predicting House Prices (Python)](./predicting_house_prices/)
-* [Predicting Numbers from Handwritten Digits (R)](./predicting_handwritten_digits/)
-* [Sentiment Analysis through Movie Reviews (Python)](./sentiment_analysis)
+* [Convolutions for Text Classification (Python)](./Machine_Learning/convolutions_for_text_classification/)
+* [Covid 19 Detection through Chest X-Rays (Python)](./Machine_Learning/covid19_detection_through_chest_X-Ray/)
+* [Fake News Detection (Python)](./Machine_Learning/fake_news_detection)
+* [Image Prediction (R)](./Machine_Learning/image_prediction/)
+* [Predicting House Prices (Python)](./Machine_Learning/predicting_house_prices/)
+* [Predicting Numbers from Handwritten Digits (R)](./Machine_Learning/predicting_handwritten_digits/)
+* [Sentiment Analysis through Movie Reviews (Python)](./Machine_Learning/sentiment_analysis)
 
 
 ### Unity
-* [Dandi Biyo - Demo (C#)](./dandi_biyo_demo/)
+* [Dandi Biyo - Demo (C#)](./Unity/dandi_biyo_demo/)
