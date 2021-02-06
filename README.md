@@ -8,6 +8,11 @@ A collection of small projects and applications made for fun.
 * [WordCloud Generator (Python)](./wordcloud_generator/)
 
 
+### Game Engine
+* [Chess (Python)](./Chess/)
+* [Flappy Bird (C#)](./FlappyBird/)
+
+
 ### Machine Learning
 * [Convolutions for Text Classification (Python)](./convolutions_for_text_classification/)
 * [Covid 19 Detection through Chest X-Rays (Python)](./covid19_detection_through_chest_X-Ray/)

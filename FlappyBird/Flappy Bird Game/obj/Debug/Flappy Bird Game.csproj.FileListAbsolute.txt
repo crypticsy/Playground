@@ -1,0 +1,15 @@
+E:\Mad knight's algo\Flappy Bird Game\Flappy Bird Game\bin\Debug\Flappy Bird Game.exe.config
+E:\Mad knight's algo\Flappy Bird Game\Flappy Bird Game\bin\Debug\Flappy Bird Game.exe
+E:\Mad knight's algo\Flappy Bird Game\Flappy Bird Game\bin\Debug\Flappy Bird Game.pdb
+E:\Mad knight's algo\Flappy Bird Game\Flappy Bird Game\obj\Debug\Flappy Bird Game.csprojAssemblyReference.cache
+E:\Mad knight's algo\Flappy Bird Game\Flappy Bird Game\obj\Debug\MainWindow.g.cs
+E:\Mad knight's algo\Flappy Bird Game\Flappy Bird Game\obj\Debug\App.g.cs
+E:\Mad knight's algo\Flappy Bird Game\Flappy Bird Game\obj\Debug\Flappy Bird Game_MarkupCompile.cache
+E:\Mad knight's algo\Flappy Bird Game\Flappy Bird Game\obj\Debug\Flappy Bird Game_MarkupCompile.lref
+E:\Mad knight's algo\Flappy Bird Game\Flappy Bird Game\obj\Debug\MainWindow.baml
+E:\Mad knight's algo\Flappy Bird Game\Flappy Bird Game\obj\Debug\Flappy Bird Game.g.resources
+E:\Mad knight's algo\Flappy Bird Game\Flappy Bird Game\obj\Debug\Flappy_Bird_Game.Properties.Resources.resources
+E:\Mad knight's algo\Flappy Bird Game\Flappy Bird Game\obj\Debug\Flappy Bird Game.csproj.GenerateResource.cache
+E:\Mad knight's algo\Flappy Bird Game\Flappy Bird Game\obj\Debug\Flappy Bird Game.csproj.CoreCompileInputs.cache
+E:\Mad knight's algo\Flappy Bird Game\Flappy Bird Game\obj\Debug\Flappy Bird Game.exe
+E:\Mad knight's algo\Flappy Bird Game\Flappy Bird Game\obj\Debug\Flappy Bird Game.pdb
