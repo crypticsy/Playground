@@ -1,3 +1,4 @@
+import os
 import ChessEngine
 import pygame as pg
 
@@ -10,12 +11,13 @@ IMAGES = {}
 
 
 
-
+base = os.path.dirname(os.path.abspath(__file__))
 
 def load_images():
     pieces = ['wP', 'wR', 'wN', 'wB', 'wK', 'wQ', 'bP', 'bR', 'bN', 'bB', 'bK', 'bQ']
     for piece in pieces:
-        IMAGES[piece] = pg.image.load("./images/" + piece + ".png")
+        print(base+"/images/" + piece + ".png")
+        IMAGES[piece] = pg.image.load(os.path.join(base, os.path.join("images",piece + ".png")))
 
 
 
@@ -58,7 +60,11 @@ def main():
     load_images()
     running = True
     sqSelected = ()         # store last click of the user
-    playerClick = []        # store clicks upto two clicks 
+    playerClick = []        # store clicks up to two clicks 
+
+    validMoves = gs.getAllValidMoves()
+    moveMade = False
+
 
     # infinite loop
     while running:
@@ -87,24 +93,29 @@ def main():
                 if len(playerClick) == 2:
                     move = ChessEngine.Move( playerClick[0], playerClick[1], gs.board )
                     print(move.getChessNotation())
-                    gs.makeMove(move)
+                    
+                    if move in validMoves:
+                        gs.makeMove(move)
+                        player = 'White' if gs.whiteToMove else 'Black'
+                        print(f"\n{player} turn to move")
+                        moveMade = True
 
                     # reset input
                     sqSelected = ()
                     playerClick.clear()
 
-            
+
+            # key handlers
             elif e.type == pg.KEYDOWN:
                 if e.key == pg.K_z:
                     gs.undoMove()
-                
-                
-
-                
+                    moveMade = True
 
 
 
-
+        if moveMade:
+            validMoves = gs.getAllValidMoves()
+            moveMade = False
 
         drawGameState(screen, gs)
         clock.tick(MAX_FPS)
