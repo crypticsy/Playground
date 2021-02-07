@@ -16,7 +16,6 @@ base = os.path.dirname(os.path.abspath(__file__))
 def load_images():
     pieces = ['wP', 'wR', 'wN', 'wB', 'wK', 'wQ', 'bP', 'bR', 'bN', 'bB', 'bK', 'bQ']
     for piece in pieces:
-        print(base+"/images/" + piece + ".png")
         IMAGES[piece] = pg.image.load(os.path.join(base, os.path.join("images",piece + ".png")))
 
 
@@ -92,17 +91,20 @@ def main():
                 
                 if len(playerClick) == 2:
                     move = ChessEngine.Move( playerClick[0], playerClick[1], gs.board )
-                    print(move.getChessNotation())
                     
                     if move in validMoves:
+                        print(move.getChessNotation())
                         gs.makeMove(move)
                         player = 'White' if gs.whiteToMove else 'Black'
                         print(f"\n{player} turn to move")
                         moveMade = True
 
-                    # reset input
-                    sqSelected = ()
-                    playerClick.clear()
+                        # reset input
+                        sqSelected = ()
+                        playerClick.clear()
+                    
+                    else:
+                        playerClick = [sqSelected]
 
 
             # key handlers
