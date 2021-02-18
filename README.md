@@ -3,7 +3,7 @@
 A collection of small projects and applications made for fun.
 
 
-<sub><sup> **Note :** The projects that have created with the guidance of external sources as been marked as follows -> `Ͼ` : Coursera, `ϔ` : Youtube<sub><sup>
+<sub>**Note :** The projects that have created with the guidance of external sources as been marked as follows -> `Ͼ` : Coursera, `ϔ` : Youtube<sub>
 
 
 ### Automation
