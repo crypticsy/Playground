@@ -1,0 +1,17 @@
+------------------- Sunday -------------------
+10:00 AM - 11:00 AM   CC6W50NI   Work Related Learning   [ Mr. Bibek Khanal ]   -->   C16+C17+C18   ( Workshop )   :   LT03 - Westminster Palace
+
+------------------- Monday -------------------
+07:00 AM - 09:00 AM   CC6001NI   Advanced Database Systems Development   [ Mr. Lekhnath Katwal ]   -->   C17   ( Lab )   :   SR04 - Tower of London
+
+------------------- Tuesday -------------------
+09:00 AM - 11:00 AM   CS6004NI   Application Development   [ Mr. Samyush Maharjan ]   -->   C17   ( Lab )   :   Level 1 - Lab 01 Sarun Dahal
+
+------------------- Wednesday -------------------
+
+------------------- Thursday -------------------
+08:30 AM - 10:00 AM   CC6001NI   Advanced Database Systems Development   [ Mr. Rohit Panday ]   -->   C10+C11+C12+C13+C14+C15+C16+C17+C18   ( Lecture )   :   Hall - 01
+
+------------------- Friday -------------------
+08:30 AM - 10:00 AM   CS6004NI   Application Development   [ Mr. Himalay Sunuwar ]   -->   C10+C11+C12+C13+C14+C15+C16+C17+C18   ( Lecture )   :   Hall - 01
+
