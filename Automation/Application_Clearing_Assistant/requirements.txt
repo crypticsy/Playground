@@ -1,0 +1,27 @@
+streamlit==1.35.0
+pandas==2.1.2
+numpy==1.26.1
+transformers==4.39.3
+fuzzywuzzy==0.18.0
+
+
+
+
+# Application Clearing Assistant Tool
+
+I came across a job at my university which was about clearing the applications for the students who applied for the courses. The job was about going through the applications and checking if the students had the required qualifications for the course they applied for. This included checking the students' grades, their previous qualifications, their personal statement and so on. In order to do so, the job description required the person to go through the courses within the university website and check the requirements for each course and then go through the applications and check if the students had the required qualifications. This was a very tedious and time consuming job and i thought to myself "Why not make this process easier and faster?".
+
+## Features
+- Scrape the information from the university website
+- 
+
+
+
+## Future Improvements
+
+
+So, i scrapped the information from the university website and made a tool that would assist the staff in  checking the applications. Instead of the dozens clicks to navigate between various website and find the information, the tool would provide the information in a few click in the same page. It also calculated the UCAS points for the students using the latest UCAS tariff points. This tool was all done in a SINGLE DAY.
+
+After this, i wanted to go ahead further and implement a LLM model able to perform a series of task and check on an applicants qualifications and personal statement. But, despite trying my best, i was unable to do so. But, i implemented a simple model that would help indetify the course the applicant was applying for from a list of possible courses. This was a very simple model and was not very accurate but it was a start.
+
+So now to go back and answer the question "Why did you make these applications?". I made these applications to make the process easier and faster. I made these applications to help the staff in their work. I made these applications to learn and to improve my skills. I made these applications to make a difference.

@@ -8,6 +8,7 @@ A collection of small projects and applications made for fun.
 
 ### Automation
 * [PDF Routine Scrapper (Python)](./Automation/pdf_routine_scrapper/)
+* [Application Clearing Assistant Tool (Python)](./Automation/Application_Clearing_Assistant/)
 
 
 ### Game Engine
